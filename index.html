@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISCASO Technical Round-2 Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+
+            <div class="action-container">
+                <input id="search" type="text" onkeyup="searchAlgorithm();" placeholder="Search by name or text" />
+
+                <select id="dropDown" onchange="dropDownFiltering();">
+                    <option value="DEFAULT">All</option>
+                    <option value="MINION">Minion</option>
+                    <option value="SPELL">Spell</option>
+                </select>
+            </div>
+
+            <div class="table-container">
+                <table id="table">
+                    <tr class="thead">
+                        <th>S.No</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Artist</th>
+                        <th>Mechanics</th>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- <div class="pagination-container">
+                <div class="pagination">
+                    <button id="leftActionButton"><i class="fa fa-caret-left"></i></button>
+                    <button id="rightActionButton"><i class="fa fa-caret-right"></i></button>
+                </div>
+            </div> -->
+        </div>
+    </main>
+
+    <script src="/javascript/index.js"></script>
+</body>
+
+</html>

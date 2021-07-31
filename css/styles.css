@@ -1,0 +1,96 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style: CSS Style Sheet */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+/* Top action-container styling */
+
+.action-container,
+.pagination-container {
+  margin: 1.5rem 0;
+}
+
+#search, #dropDown {
+  padding: 15px;
+  font-size: 15px;
+}
+
+#dropDown {
+  float: right;
+}
+
+/* Middle table-container styling */
+
+table {
+  border: 1px solid #95999c;
+  border-collapse: collapse;
+}
+
+#table td,
+#table th {
+  padding: 1.3rem 1rem;
+  vertical-align: middle;
+  text-align: left;
+  border-top: 1px solid #95999c;
+}
+
+#table .thead {
+  color: #fff;
+  background-color: #000;
+  font-size: 1.5rem;
+  border-color: #95999c;
+}
+
+
+/* Tag styling */
+
+.tag {
+  background-color: #d0d0d0;
+  padding: 5px;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+/* Bottom pagination-container styling */
+
+.pagination-container {
+  margin-bottom: 10rem;
+}
+
+.pagination-container .pagination {
+  float: right;
+}
+
+#leftActionButton, .activePageNo, #rightActionButton {
+  vertical-align: middle;
+  border: none;
+}
+
+#leftActionButton, #rightActionButton {
+  font-size: 3rem;
+  color: #d0d0d0;
+  background: none;
+}
+.activePageNo, .pageNo {
+  padding: 8px 1rem;
+  font-size: 1.5rem;
+}
+
+/* Pagination button styling */
+
+.activePageNo {
+  background-color: #000;
+  color: #fff;
+}
+
+.pageNo {
+  background-color: #fff;
+  border: 2px solid #95999c;
+}
