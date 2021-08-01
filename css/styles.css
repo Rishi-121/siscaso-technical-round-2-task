@@ -64,23 +64,24 @@ table {
   margin-bottom: 10rem;
 }
 
-.pagination-container .pagination {
+.pagination-container #pagination-wrapper {
   float: right;
 }
 
-#next, .activePageNo, #prev {
+#next, .activePageNo, .pageNo , #prev {
   vertical-align: middle;
   border: none;
 }
 
 #next, #prev {
-  font-size: 3rem;
   color: #d0d0d0;
   background: none;
 }
+
 .activePageNo, .pageNo {
   padding: 8px 1rem;
   font-size: 1.5rem;
+  margin: 0 5px;
 }
 
 /* Pagination button styling */
@@ -88,9 +89,10 @@ table {
 .activePageNo {
   background-color: #000;
   color: #fff;
+  border: 1px solid #000;
 }
 
 .pageNo {
   background-color: #fff;
-  border: 2px solid #95999c;
+  border: 1px solid #95999c;
 }

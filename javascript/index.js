@@ -2,7 +2,7 @@
 fetch('https://my-json-server.typicode.com/dbevin/mock/cards')
     .then(response =>
         response.json()
-            .then(data => addTableRowData(data))
+            .then(data => addTableRowData(data)) // Load the table data
             .catch((err) => {
                 return {
                     message: 'Unable to get the data',
@@ -16,7 +16,7 @@ fetch('https://my-json-server.typicode.com/dbevin/mock/cards')
         };
     });
 
-// Task 2: Show the data as in the table below
+// Task 2: Show the data in the table 
 function addTableRowData(rows) {
     const table = document.getElementById('table');
 
@@ -83,7 +83,6 @@ function searchAlgorithm() {
 function dropDownFiltering() {
     // Task 3:
     // d. Filter by type
-
     const select = document.getElementById('dropDown');
 
     const table = document.getElementById('table');
@@ -106,16 +105,11 @@ function dropDownFiltering() {
             }
         }
     }
-
 }
 
-// function pagination() {
-//     // Task 3:
-//     // b. Pagination (Per page 5 records)
-
-//     const table = document.getElementById('table');
-//     const rows = table.getElementsByTagName('tr');
-// }
+function pagination() {
+   
+}
 
 function toCamelCase(str) {
     str = str.replace(/(?:^\w|[A-Z]|\b\w)/g, function (match, index) {
