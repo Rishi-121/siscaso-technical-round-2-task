@@ -11,7 +11,7 @@ fetch('https://my-json-server.typicode.com/dbevin/mock/cards')
             }))
     .catch((err) => {
         return {
-            message: 'Server err',
+            message: 'Server Error',
             success: false
         };
     });
@@ -86,28 +86,26 @@ function dropDownFiltering() {
 
     const select = document.getElementById('dropDown');
 
-    select.addEventListener('change', (e) => {
-        const table = document.getElementById('table');
-        const rows = table.getElementsByTagName('tr');
+    const table = document.getElementById('table');
+    const rows = table.getElementsByTagName('tr');
 
-        if (select.value.toLowerCase() === 'default') {
-            for (let i = 0; i < rows.length; i++) {
-                rows[i].style.display = '';
-            }
-        } else {
-            for (let i = 0; i < rows.length; i++) {
-                let type = rows[i].getElementsByTagName('td')[2];
+    if (select.value.toLowerCase() === 'default') {
+        for (let i = 0; i < rows.length; i++) {
+            rows[i].style.display = '';
+        }
+    } else {
+        for (let i = 0; i < rows.length; i++) {
+            let type = rows[i].getElementsByTagName('td')[2];
 
-                if (type) {
-                    if (type.innerHTML.toLowerCase() === select.value.toLowerCase()) {
-                        rows[i].style.display = '';
-                    } else {
-                        rows[i].style.display = 'none';
-                    }
+            if (type) {
+                if (type.innerHTML.toLowerCase() === select.value.toLowerCase()) {
+                    rows[i].style.display = '';
+                } else {
+                    rows[i].style.display = 'none';
                 }
             }
         }
-    });
+    }
 
 }
 

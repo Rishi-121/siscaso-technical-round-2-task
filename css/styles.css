@@ -68,12 +68,12 @@ table {
   float: right;
 }
 
-#leftActionButton, .activePageNo, #rightActionButton {
+#next, .activePageNo, #prev {
   vertical-align: middle;
   border: none;
 }
 
-#leftActionButton, #rightActionButton {
+#next, #prev {
   font-size: 3rem;
   color: #d0d0d0;
   background: none;
