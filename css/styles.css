@@ -4,16 +4,10 @@
 
 /* Style: CSS Style Sheet */
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1000px;
-}
-
 /* Top action-container styling */
 
-.action-container,
-.pagination-container {
+#action-container,
+#pagination-container {
   margin: 1.5rem 0;
 }
 
@@ -31,6 +25,7 @@
 table {
   border: 1px solid #95999c;
   border-collapse: collapse;
+  width: 100%;
 }
 
 #table td,
@@ -60,11 +55,11 @@ table {
 
 /* Bottom pagination-container styling */
 
-.pagination-container {
+#pagination-container {
   margin-bottom: 10rem;
 }
 
-.pagination-container #pagination-wrapper {
+#pagination-container #pagination-wrapper {
   float: right;
 }
 
